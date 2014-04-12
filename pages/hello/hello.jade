@@ -1,0 +1,12 @@
+extends ../base/base
+
+block append base_head
+  link(href=path.root + "pages/hello/stylesheets/" + 'hello.css', type="text/css", rel="stylesheet")
+  link(href=path.root + "widgets/spinning/stylesheets/" + 'spinning.css', type="text/css", rel="stylesheet")
+  title Hello Page
+
+block append base_foot
+  script(src=path.root + 'pages/hello/javascripts/' + 'init.js')
+
+block content
+  include ../../widgets/spinning/spinning

@@ -1,0 +1,16 @@
+block path
+    - var path = {}
+    - path.root = "/"
+    - path.views = ""
+    - path.lib = path.root + "sea-modules/"
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        block base_head
+            include base_head
+    body
+        block content
+        block base_foot
+            include base_foot

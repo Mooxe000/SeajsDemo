@@ -1,0 +1,30 @@
+extends pages/base/base
+
+block append base_head
+  title Index Page
+  style(type="text/css").
+    body {
+      margin-left: 30px;
+      font: 20px/1.5 "Hiragino Sans GB", sans-serif;
+      color: #555;
+    }
+    a {
+      text-decoration: none;
+      margin-left: 14px;
+    }
+
+block content
+  pre
+    |seajs
+    |   `-- examples
+    |         | --
+    a(href="pages/hello/hello") Hello Sea
+    br
+    |         | --
+    a(href="pages/lucky/lucky") Lucky Ball
+    br
+    |         | --
+    a(href="pages/todo/todo") Todo
+    br
+    |         ` --
+    a(href="pages/hello/hello") Angularjs Todo

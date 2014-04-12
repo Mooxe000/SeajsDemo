@@ -1,0 +1,12 @@
+extends ../base/base
+
+block append base_head
+  link(href=path.root + "pages/lucky/stylesheets/" + 'lucky.css', type="text/css", rel="stylesheet")
+  link(href=path.root + "widgets/luckyball/stylesheets/" + 'luckyball.css', type="text/css", rel="stylesheet")
+  title Lucky Page
+
+block append base_foot
+  script(src=path.root + 'pages/lucky/javascripts/' + 'init.js')
+
+block content
+  include ../../widgets/luckyball/luckyball
