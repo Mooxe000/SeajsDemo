@@ -34,3 +34,4 @@ target.clean = ->
 
 target.all = ->
   target.clean()
+  target.build()
